@@ -1,9 +1,9 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-api_id = 15300851
-api_hash = "eaf4a765617f5ec85993b539d03fcf77"
-bot_token = "7232727920:AAGaePh1in02VFlmcqkOvoePLzXi7_-G1-A"
+api_id = int(os.getenv("api_id"))
+api_hash = os.getenv("api_hash")
+bot_token = os.getenv("bot_token")
 
 app = Client("media_hub_bot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
